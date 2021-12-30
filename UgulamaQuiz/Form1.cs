@@ -20,17 +20,19 @@ namespace UgulamaQuiz
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-             
 
+            int koltuksayisi=70;
+            int bosluk = koltuksayisi / 2;
 
             int sayim = 1;
-            for (int i = 1; i < 85; i++)
+            
+            for (int i = 1; i < koltuksayisi+bosluk; i++)
             {
                 Button btn = new Button();
                 btn.Width = btn.Height = 37;
                 btn.Tag = i;
 
-                for (int a = 3; a < 85; a=a+5)
+                for (int a = 3; a < koltuksayisi + bosluk; a=a+5)
                 {
                     if (i==a)
                     {
@@ -52,7 +54,7 @@ namespace UgulamaQuiz
                     btn.Text = sayim.ToString();
                     btn.Tag = sayim;
                     sayim++;
-                    if (sayim>54)
+                    if (sayim>koltuksayisi)
                     {
                         Label lblKapı2 = new Label();
                         lblKapı2.Width = 37;

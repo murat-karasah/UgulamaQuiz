@@ -51,7 +51,7 @@ namespace UgulamaQuiz
             // 
             this.flwPanel.Location = new System.Drawing.Point(14, 13);
             this.flwPanel.Name = "flwPanel";
-            this.flwPanel.Size = new System.Drawing.Size(257, 833);
+            this.flwPanel.Size = new System.Drawing.Size(257, 1036);
             this.flwPanel.TabIndex = 0;
             // 
             // grbKisisel
@@ -193,7 +193,7 @@ namespace UgulamaQuiz
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(976, 858);
+            this.ClientSize = new System.Drawing.Size(976, 1061);
             this.Controls.Add(this.lboxSatilankoltuklar);
             this.Controls.Add(this.grbKisisel);
             this.Controls.Add(this.flwPanel);
