@@ -18,8 +18,6 @@ namespace UgulamaQuiz
 
             InitializeComponent();
         }
-        Image woman = Image.FromFile("../../resimler/woman.png");
-        Image man = Image.FromFile("../../resimler/man.png");
         private void Form1_Load(object sender, EventArgs e)
         {
              
@@ -153,14 +151,16 @@ namespace UgulamaQuiz
             string tel = txtTelNo.Text;
             string numara = txtKoltuk.Text;
 
-            if (ad != "" || soyad != "" || tel != "" || numara !="")
+            if (ad == "" || soyad == "" || tel == "" || numara =="")
             {
-                lboxSatilankoltuklar.Items.Add($"{numara} nolu koltuk :{ad} {soyad} {cinsiyet} Tel no : {tel} ");
+                MessageBox.Show("Lütfen Bilgileri eksiksiz giriniz!");
+
 
             }
             else
             {
-                MessageBox.Show("Lütfen Bilgileri eksiksiz giriniz!");
+                lboxSatilankoltuklar.Items.Add($"{numara} nolu koltuk :{ad} {soyad} {cinsiyet} Tel no : {tel} ");
+
             }
 
             temizle();
@@ -172,7 +172,7 @@ namespace UgulamaQuiz
             txtAd.Clear();
             txtSoyad.Clear();
             txtTelNo.Clear();
-            txtAd.Clear();
+            txtKoltuk.Clear();
             grbKisisel.Enabled = false;
             rdbBay.Checked = false;
             rdnBayan.Checked = false;
